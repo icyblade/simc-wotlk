@@ -2578,7 +2578,14 @@ struct bear_form_t : public druid_spell_t
       druid_spell_t( "bear_form", player, SCHOOL_NATURE, TREE_FERAL )
   {
     druid_t* p = player -> cast_druid();
-    trigger_gcd = 0;
+
+    option_t options[] =
+    {
+      { NULL, OPT_UNKNOWN, NULL }
+    };
+    parse_options(options, options_str);
+
+    trigger_gcd = 1;
     base_execute_time = 0;
     base_cost = 0;
     id = 768;
@@ -2626,7 +2633,7 @@ struct bear_form_t : public druid_spell_t
   virtual bool ready()
   {
     druid_t* d = player -> cast_druid();
-    return ! d -> buffs_bear_form -> check();
+    return druid_spell_t::ready() && (! d -> buffs_bear_form -> check());
   }
 };
 
@@ -2638,7 +2645,14 @@ struct cat_form_t : public druid_spell_t
       druid_spell_t( "cat_form", player, SCHOOL_NATURE, TREE_FERAL )
   {
     druid_t* p = player -> cast_druid();
-    trigger_gcd = 0;
+
+    option_t options[] =
+    {
+      { NULL, OPT_UNKNOWN, NULL }
+    };
+    parse_options(options, options_str);
+
+    trigger_gcd = 1;
     base_execute_time = 0;
     base_cost = 0;
     id = 768;
@@ -2687,7 +2701,7 @@ struct cat_form_t : public druid_spell_t
   virtual bool ready()
   {
     druid_t* d = player -> cast_druid();
-    return ! d -> buffs_cat_form -> check();
+    return druid_spell_t::ready() && (! d -> buffs_cat_form -> check());
   }
 };
 
