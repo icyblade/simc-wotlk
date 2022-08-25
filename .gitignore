@@ -396,3 +396,10 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# SimC
+simc_cache.dat
+simc_gui.simc
+simc_history.dat
+simc_log.txt
+simc_report.html
