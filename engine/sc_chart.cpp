@@ -488,7 +488,7 @@ int chart_t::raid_dpet( std::vector<std::string>& images,
     {
       if ( st -> total_dmg <= 0 ) continue;
       if ( ! st -> channeled && st -> total_execute_time <= 0 ) continue;
-      if ( st -> num_executes < 5 ) continue;
+      // if ( st -> num_executes < 5 ) continue;  // This will exclude extremely high DPET spells, e.g., rip
 
       stats_list.push_back( st );
     }
