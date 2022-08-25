@@ -24,7 +24,7 @@
 // #define SC_CONST
 #define SC_CONST const
 
-#if defined( _MSC_VER )
+#if defined( _MSC_VER ) && _MSC_VER < 1930
 #  include "../vs/stdint.h"
 #  define snprintf _snprintf
 #else
@@ -54,6 +54,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
+#include <locale>
 
 #if __BSD_VISIBLE
 #  include <netinet/in.h>

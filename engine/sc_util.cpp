@@ -1105,7 +1105,7 @@ int64_t util_t::parse_date( const std::string& month_day_year )
   std::string day   = splits[ 1 ];
   std::string year  = splits[ 2 ];
 
-  for ( int i=0; i < month.size(); i++ ) month[ i ] = tolower( month[ i ] );
+  for ( size_t i=0; i < month.size(); i++ ) month[ i ] = tolower( month[ i ] );
 
   if ( month.find( "jan" ) != std::string::npos ) month = "01";
   if ( month.find( "feb" ) != std::string::npos ) month = "02";
@@ -1191,7 +1191,7 @@ int util_t::fprintf( FILE *stream, const char *format,  ... )
   retcode = vfprintf( stream, format, fmtargs );
   va_end( fmtargs );
 
-  setlocale( LC_CTYPE, p_locale );
+  setlocale( LC_CTYPE, buffer_locale );
 
   return retcode;
 }
