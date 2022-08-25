@@ -570,7 +570,7 @@ const char* chart_t::action_dpet( std::string& s,
   {
     if ( st -> total_dmg <= 0 ) continue;
     if ( ! st -> channeled && st -> total_execute_time <= 0 ) continue;
-    if ( st -> dpet > ( 5 * p -> dps ) ) continue;
+    // if ( st -> dpet > ( 5 * p -> dps ) ) continue;  // This will exclude extremely high DPET spells, e.g., rip
 
     stats_list.push_back( st );
   }
