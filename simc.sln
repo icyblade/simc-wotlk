@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "simc", "simc.vcxproj", "{D963926C-4A85-4600-8626-51FA12FDF5C1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "simcqt", "simcqt.vcxproj", "{8B5B7EB0-9B3B-3682-B018-64769C525784}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D963926C-4A85-4600-8626-51FA12FDF5C1}.Debug|x86.ActiveCfg = Debug|Win32
+		{D963926C-4A85-4600-8626-51FA12FDF5C1}.Debug|x86.Build.0 = Debug|Win32
+		{D963926C-4A85-4600-8626-51FA12FDF5C1}.Release|x86.ActiveCfg = Release|Win32
+		{D963926C-4A85-4600-8626-51FA12FDF5C1}.Release|x86.Build.0 = Release|Win32
+		{8B5B7EB0-9B3B-3682-B018-64769C525784}.Debug|x86.ActiveCfg = Debug|Win32
+		{8B5B7EB0-9B3B-3682-B018-64769C525784}.Debug|x86.Build.0 = Debug|Win32
+		{8B5B7EB0-9B3B-3682-B018-64769C525784}.Release|x86.ActiveCfg = Release|Win32
+		{8B5B7EB0-9B3B-3682-B018-64769C525784}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8445A8DD-BE2A-4462-9F7E-8AB5629CD11A}
+	EndGlobalSection
+EndGlobal
